@@ -1,3 +1,39 @@
 .main-reasons {
-  border: 3px solid turquoise;
+  background-color: $background-reasons;
+  display: grid;
+  grid-template-columns: 68px 1fr 68px;
+  grid-template-rows: repeat(5, auto);
+  row-gap: 45px;
+  &__title {
+    font-family: $font-secundary;
+    font-size: 24px;
+    text-transform: capitalize;
+    grid-column: span 3;
+    text-align: center;
+    margin: 30px 15px 0 15px;
+  }
+  &__text {
+    grid-column: 2 / 3;
+    grid-row: span 1;
+    text-align: center;
+    &__title {
+      font-family: $font-secundary;
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+    &__paragraph {
+      font-size: 18px;
+    }
+  }
+  &__button {
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $color-button;
+    border-color: $color-button;
+    color: $color-secondary;
+    font-size: 20px;
+    font-weight: medium;
+    margin-bottom: 60px;
+    grid-column: 2 / 3;
+  }
 }
