@@ -29,11 +29,15 @@
     height: 45px;
     border-radius: 22.5px;
     background-color: $color-button;
-    border-color: $color-button;
-    color: $color-secondary;
-    font-size: 20px;
-    font-weight: medium;
+    border: 2px solid $color-button;
     margin-bottom: 60px;
     grid-column: 2 / 3;
+    &--a {
+      text-decoration: none;
+      color: $color-secondary;
+      font-size: 20px;
+      font-weight: medium;
+      padding: 10px 15px;
+    }
   }
 }

@@ -6,25 +6,40 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-
   &__text {
     height: 50vh;
     display: flex;
     flex-direction: column;
     position: relative;
     bottom: 0;
-
     &__h1 {
       font-family: $font-secundary;
+      width: 300px;
+      align-self: flex-start;
       text-transform: uppercase;
+      font-weight: bold;
       font-size: 42px;
       text-align: center;
+      line-height: 55px;
+      @media all and (min-width: 768px) {
+        width: 750px;
+        font-size: 75px;
+        line-height: 90px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 90px;
+        line-height: 100px;
+      }
     }
     &__h2 {
       font-size: 16px;
       text-align: center;
-      padding: 10px 15px;
+      padding: 10px 0;
       font-weight: normal;
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+        padding: 10px 0 0 0;
+      }
     }
     &__button {
       width: 45px;
@@ -35,6 +50,15 @@
       display: flex;
       justify-content: center;
       margin: 45px auto auto auto;
+      @media all and (min-width: 768px) {
+        margin: 22px auto 23px auto;
+      }
+      @media all and (min-width: 1200px) {
+        margin: 22px auto 5px auto;
+      }
+      &--link {
+        height: 12px;
+      }
     }
   }
 }

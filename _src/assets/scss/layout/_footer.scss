@@ -1,3 +1,43 @@
 .footer {
-  border: 3px solid violet;
+  background-color: $background-footer;
+  color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0 45px 0;
+  &__button {
+    height: 45px;
+    width: 45px;
+    border: none;
+    background-color: $color-secondary;
+    border-radius: 45px 45px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translateY(-70px);
+    &--link {
+      height: 24px;
+    }
+  }
+  &__nav {
+    margin: 15px auto;
+    &__list {
+      list-style-type: none;
+      text-align: center;
+    }
+    &--link {
+      color: $color-secondary;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 30px;
+    }
+  }
+  &__text {
+    margin: 15px auto 0 auto;
+    line-height: 30px;
+    text-align: center;
+    &--heart {
+      color: $color-button;
+    }
+  }
 }
