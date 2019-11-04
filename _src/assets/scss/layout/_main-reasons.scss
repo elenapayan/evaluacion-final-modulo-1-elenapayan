@@ -4,6 +4,16 @@
   grid-template-columns: 68px 1fr 68px;
   grid-template-rows: repeat(5, auto);
   row-gap: 45px;
+  @media all and (min-width: 768px) {
+    grid-template-columns: auto 195px 195px 195px auto;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 30px;
+  }
+  @media all and (min-width: 1200px) {
+    grid-template-columns: auto 350px 350px 350px auto;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 30px;
+  }
   &__title {
     font-family: $font-secundary;
     font-size: 24px;
@@ -11,18 +21,55 @@
     grid-column: span 3;
     text-align: center;
     margin: 30px 15px 0 15px;
+    @media all and (min-width: 768px) {
+      grid-column: span 5;
+      font-size: 26px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+    }
   }
   &__text {
-    grid-column: 2 / 3;
-    grid-row: span 1;
-    text-align: center;
+    &--first {
+      grid-column: 2 / 3;
+      grid-row: span 1;
+      text-align: center;
+      @media all and (min-width: 768px) {
+        grid-column: 2 / 3;
+        grid-row: span 2;
+      }
+    }
+    &--second {
+      grid-column: 2 / 3;
+      grid-row: span 1;
+      text-align: center;
+      @media all and (min-width: 768px) {
+        grid-column: 3 / 4;
+        grid-row: span 2;
+      }
+    }
+    &--third {
+      grid-column: 2 / 3;
+      grid-row: span 1;
+      text-align: center;
+      @media all and (min-width: 768px) {
+        grid-column: 4 / 5;
+        grid-row: span 2;
+      }
+    }
     &__title {
       font-family: $font-secundary;
       font-size: 18px;
       margin-bottom: 2px;
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
     }
     &__paragraph {
       font-size: 18px;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
     }
   }
   &__button {
@@ -32,6 +79,16 @@
     border: 2px solid $color-button;
     margin-bottom: 60px;
     grid-column: 2 / 3;
+    @media all and (min-width: 768px) {
+      grid-column: span 5;
+      grid-row: span 1;
+      margin-top: 15px;
+      grid-column: 3 / 4;
+    }
+    @media all and (min-width: 1200px) {
+      width: 255px;
+      margin: 15px auto 60px auto;
+    }
     &--a {
       text-decoration: none;
       color: $color-secondary;

@@ -1,20 +1,38 @@
 .main-looking {
   padding: 30px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    padding: 30px 40px 45px 40px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 60px 275px 60px 275px;
+  }
   &--small {
     color: $color-tertiary;
     font-size: 14px;
     text-transform: capitalize;
     margin-top: 30px;
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
   &__title {
     font-family: $font-secundary;
     font-size: 24px;
     text-transform: capitalize;
     margin: 1px auto 15px auto;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+    }
   }
   &__paragraph {
     font-size: 18px;
     color: $color-quaternary;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
   }
   &__button {
     border: 2px solid $color-button;
