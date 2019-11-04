@@ -1,3 +1,10 @@
 .header {
-  background: tomato;
+  &__button {
+    height: 44px;
+    width: 44px;
+    background-color: $color-button-header;
+    border: none;
+    position: fixed;
+    top: 0;
+  }
 }
