@@ -1,3 +1,29 @@
 .main-looking {
-  border: 3px solid green;
+  padding: 30px 15px 45px 15px;
+  &--small {
+    color: $color-tertiary;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 30px;
+  }
+  &__title {
+    font-family: $font-secundary;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 1px auto 15px auto;
+  }
+  &__paragraph {
+    font-size: 18px;
+    color: $color-quaternary;
+  }
+  &__button {
+    border-color: $color-button;
+    color: $color-button;
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px 22.5px;
+    background-color: $color-secondary;
+    font-size: 20px;
+    margin: 30px 0 0;
+  }
 }
