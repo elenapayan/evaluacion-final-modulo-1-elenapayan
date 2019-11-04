@@ -3,8 +3,17 @@
   color: $color-secondary;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 45px 0 45px 0;
+  padding: 45px 0;
+  @media all and (min-width: 768px) {
+    align-items: flex-start;
+    height: 240px;
+    padding: 45px 40px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 45px 350px;
+  }
   &__button {
     height: 45px;
     width: 45px;
@@ -13,6 +22,7 @@
     border-radius: 45px 45px;
     display: flex;
     justify-content: center;
+    align-self: center;
     position: absolute;
     transform: translateY(-70px);
     &--link {
@@ -21,9 +31,20 @@
   }
   &__nav {
     margin: 15px auto;
+    @media all and (min-width: 768px) {
+      height: 200px;
+      width: 220px;
+      margin: 0;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
     &__list {
       list-style-type: none;
       text-align: center;
+      @media all and (min-width: 768px) {
+        text-align: start;
+      }
     }
     &--link {
       color: $color-secondary;
@@ -36,6 +57,16 @@
     margin: 15px auto 0 auto;
     line-height: 30px;
     text-align: center;
+    @media all and (min-width: 768px) {
+      height: 200px;
+      width: 220px;
+      order: -1;
+      text-align: start;
+      margin: 0;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
     &--heart {
       color: $color-button;
     }
