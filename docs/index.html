@@ -6,55 +6,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"
         />
         <title>Anonymous Proxy</title>
-        <link rel="stylesheet" href="./assets/css/main.css"
-        />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+        rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
     </head>
     
     <body>
-        <header class="header">Menú hamburguer</header>
+        <header class="header">
+            <button class="header__button">
+                <img src="./assets/images/ico-menu.svg" alt="Menú" title="Menú principal"
+                />
+            </button>
+        </header>
         <main>
             <header class="main-header">
-                 <h1>h1</h1>
+                <div class="main-header__text">
+                     <h1 class="main-header__text__h1">Anonymous proxy</h1>
 
-                 <h2>h2</h2>
+                     <h2 class="main-header__text__h2">In hac habitasse platea dictumst.</h2>
 
-                <button></button>
+                    <button class="main-header__text__button"> <a class="main-header__text__button--link" href="#"><img src="./assets/images/ico-scroll-down.svg" alt="Scroll down" title="Scroll down"/></a>
+
+                    </button>
+                </div>
             </header>
-            <section class="main-looking">
-                <p>p</p>
-                 <h3>h3</h3>
+            <section class="main-looking"> <small class="main-looking--small">Insomnia tips</small>
 
-                <p></p>
-                <button></button>
+                 <h3 class="main-looking__title">Looking through a window</h3>
+
+                <p class="main-looking__paragraph">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+                    luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+                <button class="main-looking__button"><a class="main-looking__button--a" href="#">Go</a>
+
+                </button>
             </section>
             <section class="main-reasons">
-                 <h3>hh3</h3>
+                 <h3 class="main-reasons__title">3 reasons to purchase</h3>
 
-                <div>
-                     <h4></h4>
+                <article class="main-reasons__text--first">
+                     <h4 class="main-reasons__text__title">Ut sed metus</h4>
 
-                    <p></p>
-                </div>
-                <div>
-                     <h4></h4>
+                    <p class="main-reasons__text__paragraph">Lorem ipsum dolor sit amet, consecteur.</p>
+                </article>
+                <article class="main-reasons__text--second">
+                     <h4 class="main-reasons__text__title">Curabitur ac erat</h4>
 
-                    <p></p>
-                </div>
-                <div>
-                     <h4></h4>
+                    <p class="main-reasons__text__paragraph">Mauris mattis urna quis lorem molestie.</p>
+                </article>
+                <article class="main-reasons__text--third">
+                     <h4 class="main-reasons__text__title">Morbi dictum</h4>
 
-                    <p></p>
-                </div>
-                <button></button>
+                    <p class="main-reasons__text__paragraph">Aliquam in dolor et dolor tincidunt.</p>
+                </article>
+                <button class="main-reasons__button"><a class="main-reasons__button--a" href="#" title="More reasons">More reasons</a>
+
+                </button>
             </section>
         </main>
         <footer class="footer">
-            <button></button>
-            <nav>nav</nav>
-            <nav></nav>
-            <div>
-                <p></p>
-                <p></p>
+            <button class="footer__button"> <a class="footer__button--link" href="#"><img src="./assets/images/ico-arrow.svg" alt="Scroll up" title="Scroll up"/></a>
+
+            </button>
+            <nav class="footer__nav">
+                <ul class="footer__nav__list">
+                    <li><a class="footer__nav--link" href="#" title="Articles">Articles</a>
+
+                    </li>
+                    <li><a class="footer__nav--link" href="#" title="Books">Books</a>
+
+                    </li>
+                    <li><a class="footer__nav--link" href="#" title="Events">Events</a>
+
+                    </li>
+                    <li><a class="footer__nav--link" href="#" title="Reasons">Reasons</a>
+
+                    </li>
+                    <li><a class="footer__nav--link" href="#" title="Tips">Tips</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer__nav">
+                <ul class="footer__nav__list">
+                    <li><a class="footer__nav--link" href="#" title="Twitter">Twitter</a>
+
+                    </li>
+                    <li><a class="footer__nav--link" href="#" title="Instagram">Instagram</a>
+
+                    </li>
+                    <li><a class="footer__nav--link" href="#" title="Mastodon.social">Mastodon.social</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__text">
+                <p>&copy2017</p>
+                <p>we <span class="footer__text--heart">&#10084;</span> components</p>
             </div>
         </footer>
     </body>
