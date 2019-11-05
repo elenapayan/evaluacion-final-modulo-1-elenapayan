@@ -54,6 +54,9 @@
       text-decoration: none;
       text-transform: uppercase;
       line-height: 30px;
+      &:hover {
+        color: $color-button;
+      }
     }
   }
   &__text {
