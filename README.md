@@ -1,4 +1,4 @@
-Ejercicio de evaluación final - Módulo 1
+EJERCICIO DE EVALUACIÓN FINAL - MÓDULO 1
 
 El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado. Hay que resolver varios puntos:
 
