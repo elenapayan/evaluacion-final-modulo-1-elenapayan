@@ -11,7 +11,7 @@
     padding: 0 40px;
   }
   @media all and (min-width: 1200px) {
-    column-gap: 30px;
+    column-gap: 25px;
     padding: 0 85px;
   }
   &__title {
@@ -42,7 +42,7 @@
         width: 195px;
       }
       @media all and (min-width: 1200px) {
-        width: 350px;
+        width: 320px;
       }
     }
     &--second {
@@ -57,7 +57,7 @@
         width: 195px;
       }
       @media all and (min-width: 1200px) {
-        width: 350px;
+        width: 320px;
       }
     }
     &--third {
@@ -72,7 +72,7 @@
         width: 195px;
       }
       @media all and (min-width: 1200px) {
-        width: 350px;
+        width: 320px;
       }
     }
     &__title {
@@ -94,10 +94,11 @@
     height: 45px;
     border-radius: 22.5px;
     background-color: $color-button;
-    border: 2px solid $color-button;
+    border: none;
     margin: 0 auto 60px auto;
     grid-column: 2 / 3;
     width: 190px;
+    transition-duration: 2s;
     @media all and (min-width: 768px) {
       grid-row: span 1;
       margin-top: 15px;
@@ -107,12 +108,24 @@
       width: 255px;
       margin: 15px auto 60px auto;
     }
+    &:hover {
+      background-color: $transition-secondary;
+      box-shadow: 0 0 8px $color-quaternary;
+      width: 200px;
+      transition: box-shadow ease 0.5s, width ease 1s;
+      @media all and (min-width: 1200px) {
+        width: 265px;
+      }
+    }
     &--a {
       text-decoration: none;
       color: $color-secondary;
       font-size: 20px;
       font-weight: medium;
-      padding: 10px 15px;
+      padding: 10px 30px;
+      @media all and (min-width: 1200px) {
+        padding: 10px 63px;
+      }
     }
   }
 }
