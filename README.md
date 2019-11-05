@@ -1,97 +1,82 @@
-![Adalab](_src/assets/images/logo-adalab-80px.png)
-# Adalab web starter kit
-Ahoy! Esta es nuestro Starter Kit en node/gulp para este primer contacto con el desarrollo web
-Incluye SCSS, un sistema de plantillas HTMl y un web server.
+Ejercicio de evaluación final - Módulo 1
 
-## Guía de inicio rápido
-Necesitarás instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com) para trabajar con este Starter Kit, luego:
-1. Descarga o clona el repositorio
-2. Instala las dependencias locales con `npm install`
-3. Arranca el kit con `gulp`
+El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado. Hay que resolver varios puntos:
 
-## Espera, ¿esto se hace siempre?
-> ### Solo una vez al principio en cada ordenador que utilicemos:
-- Instalamos node
-- Instalamos el comando de gulp de forma global para poder usarlo desde cualquier carpeta usando `npm install --global gulp-cli`
+- Usar Sass.
+- Usar flexbox y CSS Grid.
+- Usar media queries.
+- Resolver algunas interacciones usando transiciones.
 
-> ### Cada vez que descarguemos o clonemos un repo:
-- `npm install` para instalar los paquetes necesarios para convertir Sass a CSS, minizarlo, etc.
+Maquetación:
 
-> ### Cada vez que estemos trabajando con nuestro código:
-- Desde nuestra terminal, ejecutamos el comando `gulp` para que realice la tarea por defecto, que en el caso del `gulpfile.js` que tenemos en adalab-web-starter-kit estará pendiente de nuestros archivos Sass, html y JavaScript y los compilará, minificará y/o recargará el servidor cada vez que hagamos un cambio
+1. El botón de hamburguesa (en la esquina superior izquierda) debe estar fijo en la parte superior de la pantalla y no debe desaparecer al hacer scroll.
+2. Primer módulo (Anonymous proxy): debe estar maquetado con flexbox y debe ocupar el alto de la ventana del navegador.
+3. Segundo módulo (Looking Through A Window): se puede maquetar usando las propiedades de CSS que se deseen.
+4. Tercer módulo (3 Reasons To Purchase): los 3 elementos del listado deben estar maquetados con CSS Grid.
+5. Cuarto módulo (footer): se debe maquetar usando flexbox.
 
-## Tareas de gulp incluidas
-### Inicio de un web server para desarrollo
-```
-npm start
-```
-o lo que en este proyecto es lo mismo:
+Interacción
 
-```
-gulp
-```
-Lanza un webserver con BrowserSync y varios watchers estarán pendientes de los archivos SCSS/JS/HTML, en la carpeta **public/**, para recargar el navegador cuando se necesite.
+En total, hay 3 interacciones que resolver:
 
-### Versión lista para subir a producción
+1. El botón de flecha del módulo hero debe enlazar a la sección "3 Reasons To Purchase".
+2. El botón de flecha del footer debe enlazar hasta el inicio de la página.
+3. En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que
+   dejamos a vuestra elección (en el color, tamaño, etc.).
+4. BONUS: hacer una pequeña animación en el botón del footer.
 
-Para generar los ficheros para producción ejecuta:
+Entrega
 
-```
-npm run docs
-```
-o lo que en este proyecto es lo mismo:
-```
-gulp docs
-```
-En la carpeta **docs/** se generarán los CSS y JS minimizados y sin sourcemaps listos para subir al repo. A continuación súbelos al repo y activa en GitHub Pages la opción **master/docs/**, para que GitHub Pages sirva la página desde la carpeta **docs/**.
+Hemos pautado 12 horas de dedicación al ejercicio, por lo que la fecha límite de entrega es la próxima sesión a las 14:00h.
 
----
+Solo debéis hacer commits y merges en la rama master de vuestro repositorio hasta la fecha límite. Si después del ejercicio queréis seguir trabajando sobre el ejercicio, lo podéis hacer en otra rama y no debéis mergearla hasta finalizar la evaluación presencial.
+La evaluación solo se considerará terminada cuando:
 
-Si quieres generar los ficheros listos para producción y además subirlos a GitHub directamente ejecuta el siguiente comando:
-```
-npm run push-docs
-```
-Este comando borra la carpeta **docs/**, la vuelve a generar, crea un commit con los nuevos ficheros y hace un `git push`, todo del tirón. ¿Cómo se te queda el cuerpo?. Si quieres saber cómo funciona échale un ojo al fichero `package.json`.
+- Esté publicada en GitHub Pages y esté funcionando, para lo cual tendréis que subir el código, también a la carpeta docs/ del repositorio.
+- El enlace a GitHub Pages esté en la página página principal del repositorio, en la parte superior, al lado de la descripción.
 
-## Flujo de archivos con gulp
+Normas
 
-Estas tareas de gulp producen el siguiente flujo de archivos:
+Este ejercicio está pensado para que lo realices de forma individual en clase, pero podrás consultar tus dudas con la profesora y tus compañeras si lo consideras necesario. Ellas no te darán directamente la solución de tu duda, pero sí pistas para poder solucionarla. Aún facilitando la comunicación entre compañeras, durante la prueba no debes copiar código de otra persona ni acceder a su portátil. Confiamos en tu responsabilidad.
 
-![Gulp flow](./gulp-flow.png)
+La evaluación es una buena oportunidad para conocer cómo estás progresando, saber qué temas debes reforzar durante las siguientes semanas y cuáles dominas. Te recomendamos que te sientas cómoda con el ejercicio que entregues y no envíes cosas copiadas que no entiendas.
 
-## Estructura del proyecto
-Nuestro **gulpfile.js** usa un JSON de configuración con las rutas de los archivos a generar/vigilar.
+Si detectamos que has entregado código que no es tuyo, no entiendes y no lo puedes defender, pasarás directamente a la re-evaluación del módulo. Tu objetivo no debería ser pasar la evaluación sino convertirte en programadora, y esto debes tenerlo claro en todo momento.
 
-La estructura de carpetas tiene esta pinta:
-```
-/
-`- _src
-   |- assets
-   |  |- icons
-   |  |- images
-   |  |- js
-   |  `- scss
-   |     `- core
-   |
-   `- templates
-      `- partials
+Una vez entregado el ejercicio realizarás una revisión del mismo con la profesora (30 minutos), que se asemenjará a una entrevista técnica: te pedirá que expliques las decisiones tomadas para realizarlo y te propondrá realizar cambios in situ sobre tu solución.
 
-```
+Es una oportunidad para practicar la dinámica de una entrevista técnica donde te van a proponer cambios
+sobre tu código que no conoces a priori. Si evitas que otras compañeras te den pistas sobre la dinámica de feedback, podrás aprovecharlo como una práctica y pasar los nervios con la profesora en lugar de en tu primera entrevista de trabajo.
 
-## HTML
-Viene incluído el paquete [**gulp-html-partial**](https://www.npmjs.com/package/gulp-html-partial) que nos va a permitir tener un sistema de plantillas html
+Al final tendrás un feedback sobre aspectos a destacar y a mejorar en tu ejercicio, y sabrás qué objetivos de aprendizaje has superado de los listados a continuación.
 
-## Imágenes e iconos
-Tenemos en **_src/** una carpeta para las imágenes del proyecto y una para los iconos como el favicon o los iconos de dispositivos móviles. Estos últimos se generan en la raíz de las carpetas **public/** y **docs/**
+Criterios de evaluación
 
-## CSS
-Viene incluído el paquete [**gulp-combine-mq**](https://www.npmjs.com/package/gulp-combine-mq) que agrupa todas las mediaqueries al final del documento css.
+Vamos a listar los criterios de evaluación de este ejercicio. Si no superas al menos el 80% de estos criterios o no has superado algún criterio clave (marcados con \* ) te pediremos que realices una re-evaluación con el fin de que termines el curso mejor preparada y enfrentes tu primera experiencia profesional con más seguridad.
 
-## JS
-Podemos usar parciales de JS: en el JSON de configuración, **config.json** especificamos los archivos JS que utilizamos y en el orden que deben procesarse.
+En caso contrario, estás aprendiendo al ritmo que hemos pautado para poder afrontar los conocimientos del siguiente módulo.
 
-## ¿Cómo actualizo si tengo una versión anterior?
-En principio puedes descargar todos los archivos fuera de **_src/** y sustituir los de tu proyecto. Además deberías replicar la estructura de carpetas dentro de **_src/**.
+General
 
-## Falta algo?
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de los Issues o si te animas a mejorarlo mándanos un PR :)
+- Usar una estructura adecuada de ficheros y carpetas para un proyecto web, y enlazar bien los distintos ficheros \*
+- Uso de control de versiones con ramas para manejar un proyecto de código.
+
+HTML
+
+- Tener el código perfectamente indentado \* .
+- Crear código HTML con sintaxis correcta, bien estructurado \* .
+- Usar etiquetas HTML semánticas adecuadas para cada pieza de contenido \* .
+
+CSS / Sass
+
+- Tener el código perfectamente indentado \* .
+- Crear código Sass con sintaxis correcta, bien estructurado \* .
+- Usar algunas características de Sass como variables, anidación y parciales.
+- Usar código CSS que usa de forma intensiva selectores de clase \* .
+- Usar el modelo de caja de CSS de forma adecuada para especificar tamaño, relleno y márgenes \* .
+- Usar estilos de texto y fondo para distintos tipos de elementos.
+- Usar flexbox de forma adecuada para organizar elemento en cajas flexibles \*
+- Usar media queries para que los diseños se ajusten a distintos tamaños de dispositivo \* .
+- Usar posicionamiento para emplazar elementos fijos y absolutos en la pantalla.
+- Usar CSS grid para emplazar elementos usando una rejilla.
+- Usar transiciones CSS para dotar de dinamismo a un proyecto web.
