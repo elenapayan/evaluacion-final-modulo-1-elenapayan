@@ -54,10 +54,10 @@
       justify-content: center;
       margin: 45px auto auto auto;
       @media all and (min-width: 768px) {
-        margin: 22px auto 23px auto;
+        margin: auto;
       }
       @media all and (min-width: 1200px) {
-        margin: 22px auto 5px auto;
+        margin: auto;
       }
       &--link {
         height: 12px;

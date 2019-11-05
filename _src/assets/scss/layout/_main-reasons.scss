@@ -1,13 +1,13 @@
 .main-reasons {
   background-color: $background-reasons;
   display: grid;
-  grid-template-columns: 68px 1fr 68px;
+  grid-template-columns: 65px 1fr 65px;
   grid-template-rows: repeat(5, auto);
   row-gap: 45px;
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    column-gap: 60px;
+    column-gap: 40px;
     padding: 0 40px;
   }
   @media all and (min-width: 1200px) {
@@ -33,7 +33,9 @@
     &--first {
       grid-column: 2 / 3;
       grid-row: span 1;
+      width: 190px;
       text-align: center;
+      margin: auto;
       @media all and (min-width: 768px) {
         grid-column: 1 / 2;
         grid-row: span 2;
@@ -46,7 +48,9 @@
     &--second {
       grid-column: 2 / 3;
       grid-row: span 1;
+      width: 190px;
       text-align: center;
+      margin: auto;
       @media all and (min-width: 768px) {
         grid-column: 2 / 3;
         grid-row: span 2;
@@ -59,7 +63,9 @@
     &--third {
       grid-column: 2 / 3;
       grid-row: span 1;
+      width: 190px;
       text-align: center;
+      margin: auto;
       @media all and (min-width: 768px) {
         grid-column: 3 / 4;
         grid-row: span 2;
@@ -89,8 +95,9 @@
     border-radius: 22.5px;
     background-color: $color-button;
     border: 2px solid $color-button;
-    margin-bottom: 60px;
+    margin: 0 auto 60px auto;
     grid-column: 2 / 3;
+    width: 190px;
     @media all and (min-width: 768px) {
       grid-row: span 1;
       margin-top: 15px;
